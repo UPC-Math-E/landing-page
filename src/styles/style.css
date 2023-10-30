@@ -1,0 +1,389 @@
+/* ********** Custom Properties ********** */
+
+:root {
+    --first-color: rgb(217, 0, 98);
+    --first-alpha-color: rgba(217, 0, 98, 0.75);
+    --second-color: rgb(20, 25, 45);
+    --second-alpha-color: rgba(20, 25, 45, 0.75);
+    --third-color: rgb(80, 20, 100);
+    --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+    --link-color: rgb(80, 158, 227);
+    --link-alpha-color: rgba(80, 158, 227, 0.75);
+
+    --bg-color: rgb(245, 245, 245);
+    --bg-alpha-color: rgba(245, 245, 245, 0.75);
+}
+
+/* ********** Resset CSS ********** */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #9796f0; 
+    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  
+    background: linear-gradient(to right, #fbc7d4, #9796f0); 
+}
+
+/* ********** Bootstrap Styles ********** */
+
+.offcanvas-header, .offcanvas-body {
+    width: 100vw;
+}
+
+.navbar {
+    position: relative;
+    z-index: 999;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 2rem;
+}
+
+.nav-item a {
+    padding-left: .5rem;
+    /* transition: all 0.3s ease; */
+}
+
+.nav-item a:hover {
+    background-color: var(--first-alpha-color);
+    color: var(--bg-color);
+}
+
+.nav-link {
+    color: var(--first-color);
+    font-size: 1.15rem;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+.dropdown-item {
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: var(--second-alpha-color);
+}
+
+.offcanvas-start {
+    position: fixed;
+    z-index: 100000;
+}
+
+/* ********** My styles ********** */
+
+#banner {
+    height: 100%;
+    width: 100%;
+    background-image: url('/MathE_LandingPage_IHC/src/img/bg-4.jpg');
+    background-position: center;
+    background-size: cover;
+    /* Adjust to your preferred size: cover, contain, or a custom size */
+    /* background-repeat: no-repeat; */
+    /* Prevent the image from repeating */
+    background-attachment: fixed;
+    /* Optional: Keep the background fixed while scrolling */
+}
+
+#banner .hero {
+    position: relative;
+    z-index: 10;
+}
+
+#banner .third-section {
+    position: relative;
+    z-index: 10;
+}
+
+.group_education img {
+    width: 65px;
+}
+
+.group_education {
+    width: 100%;
+}
+
+#banner::after {
+    content: '';
+    background: #333;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 0.45;
+}
+
+.group_contact {
+    margin: 0 !important;
+}
+
+#main .group_contact a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0px 0;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+#main .group_contact i{
+    font-size: 1.5rem;
+    color: #8172f3;
+}
+
+#footer .row {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+#footer h4 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+#footer h4:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+#footer ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#footer ul li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #bbb;
+}
+
+#footer ul li {
+    transition: all .3s ease-in-out;
+}
+
+#footer ul li:hover {
+    color: #fff;
+    transform: translate(5px, 0);
+}
+
+#footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+#footer .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+.separator {
+    border: 1px solid #fff;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo_google {
+    width: 225px;
+}
+
+/*------------ Showcase Area ------------*/
+
+
+.cta span {
+    margin-left: 8px;
+}
+
+.cta a {
+    font-weight: 500;
+    color: white !important;
+}
+
+.wave {
+    font-size: 23px;
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+.btn {
+    /* border: 1px solid blue; */
+    width: 10rem;
+    padding: 0.5rem 1.5rem;
+    /* t-r-b-l */
+    /* padding: 10px; */
+    color: #fff !important;
+    border-radius: 15px;
+    background-color: var(--third-alpha-color);
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background-color: var(--third-color);
+}
+
+.btn_info {
+    width: 11rem;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: #bb83f0;
+    letter-spacing: 0.5px;
+    transition: .4s;
+}
+
+.btn_info:hover {
+    background-color: #4f40c0;
+    color: whitesmoke;
+    
+}
+
+.row {
+    margin: auto 0;
+}
+
+/*------------ Main Area ------------*/
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(50%);
+}
+
+#main .carousel {
+    width: 100%;
+    padding: 0 !important;
+}
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* .fs-lg-5 {
+        font-size: 1.15rem !important; /
+    } */
+
+    .offcanvas-header, .offcanvas-body {
+        width: 100%;
+    }
+
+    #main .group_contact a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 65px;
+        margin: 0 20px 0px 0;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+
+    #main .group_contact i{
+        font-size: 2rem;
+        color: #8172f3;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .group_education img {
+        width: 80px;
+    }
+
+    #carouselExampleIndicators {
+        width: 50% !important;
+    }
+
+    #main .carousel {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .nav-item a:hover {
+        background-color: transparent;
+    }
+
+    #banner {
+        height: 100vh;
+    }
+
+    .group_education {
+        width: 50%;
+    }
+
+    .group_education img {
+        width: 95px;
+    }
+
+    #main .carousel {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /*  .fs-lg-5 {
+        font-size: 1.25rem !important; 
+    } */
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
