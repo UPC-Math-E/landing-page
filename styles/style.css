@@ -94,7 +94,7 @@ body {
 #banner {
     height: 100%;
     width: 100%;
-    background-image: url('/MathE_LandingPage_IHC/src/img/bg-4.jpg');
+    background-image: url('/img/bg-4.jpg');
     background-position: center;
     background-size: cover;
     /* Adjust to your preferred size: cover, contain, or a custom size */
