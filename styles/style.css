@@ -97,11 +97,7 @@ body {
     background-image: url('/img/bg-4.jpg');
     background-position: center;
     background-size: cover;
-    /* Adjust to your preferred size: cover, contain, or a custom size */
-    /* background-repeat: no-repeat; */
-    /* Prevent the image from repeating */
     background-attachment: fixed;
-    /* Optional: Keep the background fixed while scrolling */
 }
 
 #banner .hero {
