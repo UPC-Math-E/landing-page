@@ -274,27 +274,9 @@ body {
 
 /*------------ Showcase Area ------------*/
 
-
-.cta span {
-    margin-left: 8px;
-}
-
 .cta a {
     font-weight: 500;
     color: white !important;
-}
-
-.wave {
-    font-size: 23px;
-    animation-name: wave-animation;
-    /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;
-    /* Change to speed up or slow down */
-    animation-iteration-count: infinite;
-    /* Never stop waving :) */
-    transform-origin: 70% 70%;
-    /* Pivot around the bottom-left palm */
-    display: inline-block;
 }
 
 .btn {
@@ -349,7 +331,23 @@ body {
     padding: 0 !important;
 }
 
+/*------------ Testimonials Section ------------*/
 
+.profile {
+    padding: 80px 10px 10px;
+    background-color: #efefef;
+}
+
+.profile img {
+    position: absolute;
+    transform: translate(-80px, -160px);
+}
+
+.user {
+    width: 160px;
+    border-radius: 50%;
+    border: 8px solid white;
+}
 
 
 /* // X-Small devices (portrait phones, less than 576px)
