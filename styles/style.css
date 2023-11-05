@@ -24,16 +24,11 @@
     text-decoration: none;
     /* font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
 }
 
 a {
     text-decoration: none;
-}
-
-body {
-    /* background: #9796f0; 
-    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  
-    background: linear-gradient(to right, #fbc7d4, #9796f0);  */
 }
 
 /* ********** Bootstrap Styles ********** */
@@ -180,6 +175,45 @@ body {
 .service:hover .iconbox {
     background-color: rgba(255,255,255,0.2);
     color: white;
+}
+
+.getStarted {
+    border: none;
+    width: 85%;
+    border-radius: 16px;
+    background-color: rgb(82, 33, 99);
+    color: whitesmoke;
+    font-weight: bold;
+    box-shadow: 0 5px 0 rgb(52, 5, 68);
+    letter-spacing: 1.5px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+   
+.getStarted:hover {
+    cursor: pointer;
+    background-color: rgb(73, 16, 92);
+}
+
+.haveAccount {
+    border: 4px solid rgb(104, 19, 133);
+    width: 85%;
+    border-radius: 16px;
+    background-color: none;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    /* box-shadow: 0 2px 0 rgb(105, 19, 133); */
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+   
+.haveAccount:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.350)
 }
 
 
@@ -349,10 +383,6 @@ body {
     border: 8px solid white;
 }
 
-
-/* // X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     /* .fs-lg-5 {
@@ -418,6 +448,14 @@ body {
     #main .carousel {
         width: 100% !important;
         margin: 0 auto;
+    }
+
+    .getStarted {
+        width: 50%;
+    }
+
+    .haveAccount {
+        width: 50%;
     }
 }
 
