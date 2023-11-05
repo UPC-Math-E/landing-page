@@ -89,7 +89,6 @@ a {
 #banner {
     height: 100%;
     width: 100%;
-    background-image: url('/img/bg-4.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
