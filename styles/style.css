@@ -200,7 +200,7 @@ a {
     border: 4px solid rgb(104, 19, 133);
     width: 85%;
     border-radius: 16px;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0.250);
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -213,7 +213,7 @@ a {
    
 .haveAccount:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.350)
+    background-color: rgba(0, 0, 0, 0.450)
 }
 
 
@@ -424,6 +424,14 @@ a {
     #main .carousel {
         width: 100% !important;
         padding: 0 !important;
+    }
+
+    .getStarted {
+        width: 55%;
+    }
+
+    .haveAccount {
+        width: 55%;
     }
 }
 
