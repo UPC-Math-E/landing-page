@@ -26,16 +26,16 @@
     font-family: 'Roboto', sans-serif; */
     font-family: 'Varela Round', sans-serif;
 }
-
 a {
     text-decoration: none;
 }
 
 /* ********** Bootstrap Styles ********** */
 
-.offcanvas-header, .offcanvas-body {
+.offcanvas-start, .offcanvas-body {
     width: 100vw;
 }
+
 
 .navbar {
     position: relative;
@@ -46,11 +46,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 130px;
+    width: 150px;
 }
 
 .navbar-brand img {
-    width: 120%;
+    width: 100%;
     z-index: 500;
 }
 
@@ -125,6 +125,7 @@ a {
 
 .group_contact {
     margin: 0 !important;
+    padding: 0;
 }
 
 /* ICONBOX */
@@ -331,26 +332,28 @@ a {
 }
 
 .btn_info {
-    width: 11rem;
+    width: 50%;
     text-align: center;
     padding: 0.5rem 1.5rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-    background-color: #bb83f0;
+    /* t-r-b-l */
+    /* padding: 10px; */
+    color: #fff !important;
+    border-radius: 8px;
+    background-color: var(--third-alpha-color);
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
     letter-spacing: 0.5px;
-    transition: .4s;
 }
 
 .btn_info:hover {
-    background-color: #4f40c0;
+    background-color: var(--third-color);
     color: whitesmoke;
     
 }
 
 #counter {
     padding: 140px 0;
-    background: linear-gradient(rgba(78, 87, 212, 0.8), rgba(78, 87, 212, 0.8)), url(/img/bg-counter.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -459,7 +462,7 @@ a {
 .plains .plains_info:hover {
     background: #473f80;
     color: #fff;
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .plains .plains_info > h1 > span {
@@ -483,13 +486,11 @@ a {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    /* .fs-lg-5 {
-        font-size: 1.15rem !important; /
-    } */
 
     .offcanvas-header, .offcanvas-body {
         width: 100%;
     }
+
 
     #main .group_contact a{
         display: flex;
@@ -500,10 +501,6 @@ a {
         margin: 0 20px 0px 0;
         text-align: center;
         transition: all 0.4s ease-in-out;
-    }
-
-    .navbar-brand img {
-        width: 130%;
     }
 
     #main .group_contact i{
@@ -528,16 +525,16 @@ a {
         padding: 0 !important;
     }
 
-    .navbar-brand img {
-        width: 150%;
-    }
-
     .getStarted {
         width: 55%;
     }
 
     .haveAccount {
         width: 55%;
+    }
+
+    .btn_info {
+        width: 40%;
     }
 }
 
@@ -559,10 +556,6 @@ a {
         width: 95px;
     }
 
-    .navbar-brand img {
-        width: 170%;
-    }
-
     #main .carousel {
         width: 100% !important;
         margin: 0 auto;
@@ -574,7 +567,16 @@ a {
 
     .haveAccount {
         width: 50%;
+    }   
+
+    .navbar-brand {
+        width: 200px;
     }
+
+    .btn_info {
+        width: 30%;
+    }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
