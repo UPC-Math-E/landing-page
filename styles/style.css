@@ -452,7 +452,7 @@ a {
 
 .plains .plains_info {
     border-radius: 1rem;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.08);
     color: #333;
     transition: all 0.3s ease-in-out;
     background-color: rgba(201, 200, 199, 0.158);
@@ -480,6 +480,22 @@ a {
     color: #e91e63;
     font-weight: bold;
     margin-right: 8px;
+}
+
+.btn_send {
+    padding: 8px 0;
+    background-color: #6269cc;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.btn_send:hover {
+    background-color: rgb(44, 54, 145);
 }
 
 /*------------ Counter Section ------------*/
