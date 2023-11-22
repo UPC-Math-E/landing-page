@@ -36,6 +36,10 @@ a {
 
 /* ********** Bootstrap Styles ********** */
 
+#banner {
+    height: 100vh !important;
+}
+
 .offcanvas-start, .offcanvas-body {
     width: 100vw;
 }
