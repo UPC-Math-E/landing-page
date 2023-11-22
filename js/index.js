@@ -1,8 +1,26 @@
-function olis() {
+const d = document;
+const body = d.body;
+const html = d.documentElement;
+const totalPageHeight = Math.max(body.scrollHeight, body.offsetHeight,
+    html.clientHeight, html.scrollHeight, html.offsetHeight)
+// elementos
+const btnHomePage = d.querySelector('.btn_homePage');
 
-    let sexo = "hola";
+document.addEventListener('DOMContentLoaded', (e) => {
+    
+})
 
-    return sexo;
-}
+document.addEventListener('scroll', (e) => {
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-console.log(olis());
+    const scrolled = (currentScroll + windowHeight) / totalPageHeight;
+
+    if (scrolled > 0.6) {
+        btnHomePage.style.display = 'flex';
+    }
+    else if (scrolled < 0.6) {
+        btnHomePage.style.display = 'none'
+    }
+
+})
